@@ -12,7 +12,7 @@ async function index (req, res, next) { // eslint-disable-line no-unused-vars
 	}
 
 	const data = {
-		title: 'Aktivuloj',
+		title: 'Membroj',
 		stylesheets: [
 			'/plugins/bootstrap-select/css/bootstrap-select.min.css'
 		],

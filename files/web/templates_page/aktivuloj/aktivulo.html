@@ -26,7 +26,7 @@
 			<div class="card" id="private-info-alert">
 				<div class="body">
 					<p>
-						La profilo de {{page.aktivulo.briefName}} enhavas privatajn informojn, kiuj nur videblas de aktivuloj en Centra Reto. Bonvolu respekti
+						La profilo de {{page.aktivulo.briefName}} enhavas privatajn informojn, kiuj nur videblas de membroj en Centra Reto. Bonvolu respekti
 						{{#if page.aktivulo.randomPronoun}}
 						{{page.aktivulo.randomPronoun}}an decidon
 						{{else}}
@@ -35,7 +35,7 @@
 						kaj ne diskonigi la informojn sen permeso.
 					</p>
 					<p>
-						Se nur aktivuloj en Centra Reto povas vidi vian ekranon, vi povas alklaki la ĉi-suban butonon por vidi la privatajn informojn.
+						Se nur membroj en Centra Reto povas vidi vian ekranon, vi povas alklaki la ĉi-suban butonon por vidi la privatajn informojn.
 					</p>
 					<button class="btn btn-primary waves-effect m-t-15" id="private-info-button">MONTRI PRIVATAJN INFORMOJN</button>
 				</div>
@@ -124,7 +124,7 @@
 		<label>Videbleco de via profilbildo:</label>
 		<div class="switch">
 			<label>
-				Nur aktivuloj
+				Nur membroj
 				<input type="checkbox"
 					{{#if page.aktivulo.selfData.picturePublic}}
 						checked
