@@ -404,7 +404,7 @@
     color: #009688 !important; }
 
 .theme-green .navbar {
-  background-color: #4CAF50; }
+  background-color: #29aa51; }
 
 .theme-green .navbar-brand {
   color: #fff; }
@@ -435,7 +435,7 @@
 .theme-green .sidebar .menu .list li.active {
   background-color: transparent; }
   .theme-green .sidebar .menu .list li.active > :first-child i, .theme-green .sidebar .menu .list li.active > :first-child span {
-    color: #4CAF50; }
+    color: #29aa51; }
 
 .theme-green .sidebar .menu .list .toggled {
   background-color: transparent; }
@@ -446,7 +446,7 @@
 .theme-green .sidebar .legal {
   background-color: #fff; }
   .theme-green .sidebar .legal .copyright a {
-    color: #4CAF50 !important; }
+    color: #29aa51 !important; }
 
 .theme-light-green .navbar {
   background-color: #8BC34A; }

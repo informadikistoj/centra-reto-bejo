@@ -2,16 +2,16 @@
   background-color: #fff; }
 
 .theme-tejo .navbar-brand {
-  color: #fff; }
+  color: #5f5f5f; }
   .theme-tejo .navbar-brand:hover {
-    color: #fff; }
+    color: #5f5f5f; }
   .theme-tejo .navbar-brand:active {
-    color: #fff; }
+    color: #5f5f5f; }
   .theme-tejo .navbar-brand:focus {
-    color: #fff; }
+    color: #5f5f5f; }
 
 .theme-tejo .nav > li > a {
-  color: #fff; }
+  color: #5f5f5f; }
   .theme-tejo .nav > li > a:hover {
     background-color: transparent; }
   .theme-tejo .nav > li > a:focus {
@@ -25,7 +25,7 @@
     background-color: transparent; }
 
 .theme-tejo .bars {
-  color: #fff; }
+  color: #5f5f5f; }
 
 .theme-tejo .sidebar .menu .list li.active {
   background-color: transparent; }

@@ -285,58 +285,55 @@ async function amendView (req, view) {
 			active: req.originalUrl === '/'
 		},
 		{
-			name: 'Aktivuloj',
+			name: 'Membroj',
 			icon: 'people',
 			href: '/aktivuloj',
 			active: /^\/aktivuloj/.test(req.originalUrl)
 		}
 	];
 
-	// Cirkuleroj
-	if (req.user && await req.user.hasPermission('cirkuleroj.manage')) {
-		view.menu.push({
-			name: 'Cirkuleroj',
-			icon: 'assignment',
-			active: /^\/cirkuleroj/.test(req.originalUrl),
-			children: [
-				{
-					name: 'Venontaj cirkuleroj',
-					href: '/cirkuleroj/venontaj'
-				},
-				{
-					name: 'Agordoj',
-					href: '/cirkuleroj/agordoj'
-				},
-				{
-					name: 'Arkivo',
-					href: '/cirkuleroj/arkivo'
-				}
-			]
-		});
-	} else {
-		view.menu.push({
-			name: 'Cirkuleroj',
-			icon: 'assignment',
-			href: '/cirkuleroj/arkivo',
-			active: /^\/cirkuleroj/.test(req.originalUrl)
-		});
-	}
+	// // Cirkuleroj
+	// if (req.user && await req.user.hasPermission('cirkuleroj.manage')) {
+	// 	view.menu.push({
+	// 		name: 'Cirkuleroj',
+	// 		icon: 'assignment',
+	// 		active: /^\/cirkuleroj/.test(req.originalUrl),
+	// 		children: [
+	// 			{
+	// 				name: 'Venontaj cirkuleroj',
+	// 				href: '/cirkuleroj/venontaj'
+	// 			},
+	// 			{
+	// 				name: 'Agordoj',
+	// 				href: '/cirkuleroj/agordoj'
+	// 			},
+	// 			{
+	// 				name: 'Arkivo',
+	// 				href: '/cirkuleroj/arkivo'
+	// 			}
+	// 		]
+	// 	});
+	// } else {
+	// 	view.menu.push({
+	// 		name: 'Cirkuleroj',
+	// 		icon: 'assignment',
+	// 		href: '/cirkuleroj/arkivo',
+	// 		active: /^\/cirkuleroj/.test(req.originalUrl)
+	// 	});
+	// }
 
 	// Voĉdonado
 
 	const votingMenuItemChildren = [];
 
-	if (req.user) {
-		votingMenuItemChildren.push({
-			name: 'Reta voĉdonado',
-			href: '/vochdonado/retaj'
-		});
-	}
-
 	votingMenuItemChildren.push({
-		name: 'Eksterreta voĉdonado',
-		href: '/vochdonado/eksterreta'
+		name: 'Reta voĉdonado',
+		href: '/vochdonado/retaj'
 	});
+	// votingMenuItemChildren.push({
+	// 	name: 'Eksterreta voĉdonado',
+	// 	href: '/vochdonado/eksterreta'
+	// });
 
 	view.menu.push({
 		name: 'Voĉdonado',

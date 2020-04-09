@@ -1092,11 +1092,11 @@
 }
 
 .green {
-  background-color: #4CAF50 !important;
+  background-color: #29aa51 !important;
 }
 
 .green-text {
-  color: #4CAF50 !important;
+  color: #29aa51 !important;
 }
 
 .green.lighten-5 {
@@ -5765,8 +5765,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #29aa51;
+  box-shadow: 0 1px 0 0 #29aa51;
 }
 
 input:not([type]).valid + label:after,
@@ -5796,7 +5796,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #29aa51;
   opacity: 1;
 }
 
@@ -7626,7 +7626,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #29aa51;
 }
 
 .carousel {

@@ -4,11 +4,11 @@
 }
 
 #cr-login-logo {
-	width: 100%
+	height: 100px;
 }
 
 #cr-login-logo-container {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .login-page,.signup-page {
@@ -309,7 +309,7 @@ img.blur {
 
 #cr-privacy-policy-logo-container {
 	margin: auto;
-	max-width: 500px;
+	max-width: 150px;
 	margin-bottom: 65px;
 }
 

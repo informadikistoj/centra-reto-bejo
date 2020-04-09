@@ -1,6 +1,6 @@
 # Centra Reto
 
-![Emblemo de Centra Reto](files/web/static/images/tejo_cr.svg)
+![Emblemo de Centra Reto](files/web/static/images/bejo.png)
 
 Centra Reto estas la ĉefa interna sistemo de TEJO, kiu provizas facilan aliron al la plej gravaj sistemoj de TEJO. La nuna stabila versio de la sistemo troviĝas ĉe [reto.tejo.org](https://reto.tejo.org).
 

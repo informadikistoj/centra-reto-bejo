@@ -1,14 +1,7 @@
 
 - {{&preheader}} -
 {{&preheader_spaces}}
-
-     _______ ______     _  ____  
-    |__   __|  ____|   | |/ __ \ 
-       | |  | |__      | | |  | |
-       | |  |  __| _   | | |  | |
-       | |  | |___| |__| | |__| |
-       |_|  |______\____/ \____/ 
                               
-Tutmonda Esperantista Junulara Organizo
+Brazila Esperantista Junulara Organizo
 
 

@@ -151,7 +151,7 @@ $(function () {
 						datasets: [{
 							data: [ contributors.length, nonContributors.length ],
 							backgroundColor: [
-								'#4CAF50', '#F44336'
+								'#29aa51', '#F44336'
 							]
 						}],
 						labels: [
