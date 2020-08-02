@@ -15,9 +15,9 @@ $(function () {
 				if (!res.success) { return; }
 				swal({
 					icon: 'success',
-					title: 'Retmesaĝo sendita',
-					text: 'Ni ĵus sendis al vi retmesaĝon kun instrukcioj pri kiel nuligi vian pasvorton.',
-					button: 'Fermi'
+					title: 'E-mail enviado',
+					text: 'Acabamos de te enviado um email com instruções para redefinir sua senha.',
+					button: 'Fechar'
 				}).then(function () {
 					window.location.href = '/';
 				})

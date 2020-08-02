@@ -1,13 +1,13 @@
-Bonvenon al Centra Reto
+Boas-vindas ao Centra Reto
 =======================
 
 {{#if sender_name~}}
-	{{&sender_name}} invitis vin
+	{{&sender_name}} te convidou
 {{~else~}}
-	Vi estis invitita
+	Você recebeu um convite
 {{~/if}} {{_~}}
-al Centra Reto de TEJO, la ĉefa interna sistemo por membroj de BEJO.
+para o Centra Reto da TEJO, o sistema interno de votação para membros da BEJO.
 
-Bonvolu malfermi la ĉi-suban retadreson por krei konton. La ligilo validas dum 30 tagoj.
+Copie e cole o endereço abaixo no seu navegador para criar a sua conta. Este link é válido por 30 dias.
 
 {{&activation_link}}

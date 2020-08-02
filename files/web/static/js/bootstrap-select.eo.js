@@ -23,19 +23,19 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'Nenio elektita',
-    noneResultsText: 'Neniuj rezultoj por {0}',
+    noneSelectedText: 'Nenhum opção marcada',
+    noneResultsText: 'Nenhum resultado para {0}',
     countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? "{0} eblo elektita" : "{0} ebloj elektitaj";
+      return (numSelected == 1) ? "{0} opção marcada" : "{0} opções marcadas";
     },
     maxOptionsText: function (numAll, numGroup) {
       return [
-        (numAll == 1) ? 'Limo atingita (maksimume {n} ebloj)' : 'Limo atingita (maksimume {n} ebloj)',
-        (numGroup == 1) ? 'Gruplimo atingita (maksimume {n} ebloj)' : 'Gruplimo atingita (maksimume {n} ebloj)'
+        (numAll == 1) ? 'Limite atingido (máx. {n} opções)' : 'Limite atingido (máx. {n} opções)',
+        (numGroup == 1) ? 'Limite de grupo atingido (máx. {n} opções)' : 'Limite de grupo atingido (máx. {n} opções)'
       ];
     },
-    selectAllText: 'Elekti ĉiujn',
-    deselectAllText: 'Malelekti ĉiujn',
+    selectAllText: 'Marcar todos',
+    deselectAllText: 'Desmarcar todos',
     multipleSeparator: ', '
   };
 })(jQuery);

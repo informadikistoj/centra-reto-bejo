@@ -4,13 +4,13 @@
 			<li>
 				<a href="/">
 					<i class="material-icons">home</i>
-					Hejmo
+					Página Inicial
 				</a>
 			</li>
 			<li>
 				<a href="/aktivuloj">
 					<i class="material-icons">people</i>
-					Membroj
+					Membros
 				</a>
 			</li>
 			<li>
@@ -26,18 +26,13 @@
 			<div class="card" id="private-info-alert">
 				<div class="body">
 					<p>
-						La profilo de {{page.aktivulo.briefName}} enhavas privatajn informojn, kiuj nur videblas de membroj en Centra Reto. Bonvolu respekti
-						{{#if page.aktivulo.randomPronoun}}
-						{{page.aktivulo.randomPronoun}}an decidon
-						{{else}}
-						la decidon de {{page.aktivulo.briefName}}
-						{{/if}}
-						kaj ne diskonigi la informojn sen permeso.
+						O perfil de {{page.aktivulo.briefName}} contém informações privadas que só são visíveis a membros do Centra Reto. Por favor, respeite sua decisão
+						e não compartilhe informações sem premissão.
 					</p>
 					<p>
-						Se nur membroj en Centra Reto povas vidi vian ekranon, vi povas alklaki la ĉi-suban butonon por vidi la privatajn informojn.
+						Se sua tela for visível apenas para membros do Centra Reto da BEJO, você pode clicar no botão abaixo para ver as informações privadas.
 					</p>
-					<button class="btn btn-primary waves-effect m-t-15" id="private-info-button">MONTRI PRIVATAJN INFORMOJN</button>
+					<button class="btn btn-primary waves-effect m-t-15" id="private-info-button">MOSTRAR INFORMAÇÕES PRIVADAS</button>
 				</div>
 			</div>
 			{{/if}}
@@ -46,7 +41,7 @@
 				<div class="cr profile-header">
 					<ul class="header-dropdown">
 						{{#if page.aktivulo.isSelf}}
-						<li title="Ŝanĝi profilbildon">
+						<li title="Alterar foto de perfil">
 							<i class="material-icons clickable" id="edit-profile-picture">edit</i>
 						</li>
 						{{/if}}
@@ -56,7 +51,7 @@
 					<div class="cr image-area">
 						<div id="user-image" {{#if page.aktivulo.isSelf}}class="clickable"{{/if}}>
 							{{#if page.aktivulo.hasPicture}}
-							<img src="{{page.aktivulo.pictures.[256]}}" width="128" height="128" alt="Bildo de {{page.aktivulo.longName}}" {{#if page.aktivulo.picturePrivate}}class="blur"{{/if}}>
+							<img src="{{page.aktivulo.pictures.[256]}}" width="128" height="128" alt="Foto de {{page.aktivulo.longName}}" {{#if page.aktivulo.picturePrivate}}class="blur"{{/if}}>
 							{{else}}
 							<svg width="128" height="128" data-jdenticon-value="{{page.aktivulo.longName}}" class="cr-user-picture"></svg>{{/if}}
 						</div>
@@ -82,21 +77,21 @@
 						<li class="oneline">
 							<div class="title">
 								<i class="material-icons">favorite</i>
-								Pronomoj
+								Pronomes
 							</div>
 							<div class="content">
 								{{#page.aktivulo.details.pronouns}}
 								<span class="label bg-red">{{.}}</span>
 								{{/page.aktivulo.details.pronouns}}
 								{{^page.aktivulo.details.pronouns}}
-								Bonvolu uzi mian nomon.
+								Por favor, use meu nome.
 								{{/page.aktivulo.details.pronouns}}
 							</div>
 						</li>
 						<li class="oneline">
 							<div class="title">
 								<i class="material-icons">email</i>
-								Ĉefa retpoŝtadreso
+								Endereço de e-mail principal
 							</div>
 							<div class="content">
 								<a data-mail="{{page.aktivulo.emailObfuscated}}"></a>
@@ -115,35 +110,35 @@
 	<div class="m-b-20">
 		<button class="remove-profile-picture-button btn btn-danger waves-effect">
 			<i class="material-icons">delete_forever</i>
-			Forigi profilbildon
+			Remover foto de perfil
 		</button>
 	</div>
 	{{/if}}
 
 	<div class="m-b-20">
-		<label>Videbleco de via profilbildo:</label>
+		<label>Quem pode ver seu perfil:</label>
 		<div class="switch">
 			<label>
-				Nur membroj
+				Apenas membros
 				<input type="checkbox"
 					{{#if page.aktivulo.selfData.picturePublic}}
 						checked
 					{{/if}}
 					class="edit-profile-picture-publicity">
 				<span class="lever switch-col-green"></span>
-				Ĉiuj
+				Todos
 			</label>
 		</div>
 	</div>
 
 	<div>
-		<label>Alŝuti novan profilbildon (jpg aŭ png, maks. 3MB):</label>
+		<label>Enviar uma nova imagem de perfil (jpg ou png, máx. 3MB):</label>
 		<div class="dropzone edit-profile-picture-upload">
 			<div class="dz-message">
 				<div class="drag-icon-cph">
 					<i class="material-icons">touch_app</i>
 				</div>
-				<h3>Ĵetu dosieron tien ĉi aŭ alklaku por alŝuti.</h3>
+				<h3>Arraste o arquivo para cá ou clique para enviar.</h3>
 			</div>
 		</div>
 	</div>

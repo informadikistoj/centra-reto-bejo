@@ -279,13 +279,13 @@ async function amendView (req, view) {
 	// Menu
 	view.menu = [
 		{
-			name: 'Hejmo',
+			name: 'Página inicial',
 			icon: 'home',
 			href: '/',
 			active: req.originalUrl === '/'
 		},
 		{
-			name: 'Membroj',
+			name: 'Membros',
 			icon: 'people',
 			href: '/aktivuloj',
 			active: /^\/aktivuloj/.test(req.originalUrl)
@@ -327,7 +327,7 @@ async function amendView (req, view) {
 	const votingMenuItemChildren = [];
 
 	votingMenuItemChildren.push({
-		name: 'Reta voĉdonado',
+		name: 'Votações online',
 		href: '/vochdonado/retaj'
 	});
 	// votingMenuItemChildren.push({
@@ -336,7 +336,7 @@ async function amendView (req, view) {
 	// });
 
 	view.menu.push({
-		name: 'Voĉdonado',
+		name: 'Votações',
 		icon: 'how_to_vote',
 		active: /^\/vochdonado/.test(req.originalUrl),
 		children: votingMenuItemChildren
@@ -344,7 +344,7 @@ async function amendView (req, view) {
 
 	// Resursoj
 	view.menu.push({
-		name: 'Eksteraj resursoj',
+		name: 'Recursos externos',
 		icon: 'http',
 		href: '/resursoj',
 		active: /^\/resursoj/.test(req.originalUrl)

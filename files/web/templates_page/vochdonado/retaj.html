@@ -4,18 +4,18 @@
 			<li>
 				<a href="/">
 					<i class="material-icons">home</i>
-					Hejmo
+					Página Inicial
 				</a>
 			</li>
 			<li>
 				<a href="/vochdonado">
 					<i class="material-icons">how_to_vote</i>
-					Voĉdonado
+					Votações
 				</a>
 			</li>
 			<li>
 				<a href="/vochdonado/retaj">
-					Reta voĉdonado
+					Votações online
 				</a>
 			</li>
 		</ol>
@@ -25,14 +25,14 @@
 			{{#if permissions.votes.manage}}
 			<div class="card">
 				<div class="header">
-					<h2>Krei novan voĉdonon</h2>
+					<h2>Criar uma nova votação</h2>
 				</div>
 				<div class="body">
 					<form id="create-vote-form" autocomplete="off">
 						<div class="form-group form-float">
 							<div class="form-line">
 								<input type="text" id="create-vote-form-name" name="name" class="form-control" required maxlength="100">
-								<label class="form-label" for="create-vote-form-name">Titolo</label>
+								<label class="form-label" for="create-vote-form-name">Título</label>
 							</div>
 						</div>
 
@@ -46,7 +46,7 @@
 
 						<div class="form-group">
 							<div class="form-line tagsinput-group">
-								<label for="create-vote-form-groups">Voĉdonrajtantoj:</label>
+								<label for="create-vote-form-groups">Quem pode votar:</label>
 								<select multiple class="form-control" id="create-vote-form-groups"></select>
 							</div>
 						</div>
@@ -54,47 +54,47 @@
 						<div class="form-group form-float">
 							<div class="form-line">
 								<select id="create-vote-form-type" name="type" class="form-control" required>
-									<option value="jns">Jes/Ne/Sindeteno</option>
+									<option value="jns">Sim/Não/Abstenção</option>
 									<option value="pr">Paroranga Metodo</option>
 									<option value="utv">Unuopa Transdonebla Voĉo</option>
 								</select>
-								<label class="form-label" for="create-vote-form-name">Voĉdonsistemo</label>
+								<label class="form-label" for="create-vote-form-name">Sistema de votação</label>
 							</div>
 						</div>
 
 						<div class="form-group form-float">
 							<div class="form-line">
 								<input type="text" id="create-vote-form-timeTo" name="timeTo" class="form-control" required>
-								<label class="form-label" for="create-vote-form-timeTo">Limhoro (UTC)</label>
+								<label class="form-label" for="create-vote-form-timeTo">Horário Limite(UTC)</label>
 							</div>
 						</div>
 
 						<div class="form-group form-float">
 							<div class="form-line">
 								<select id="create-vote-form-quorum" name="quorum" class="form-control" required>
-									<option value="0">Neniu necesa</option>
-									<option value="1/2">½ (duono)</option>
-									<option value="2/3">⅔ (du-trionoj)</option>
+									<option value="0">Quorum não necessário</option>
+									<option value="1/2">½ (metade)</option>
+									<option value="2/3">⅔ (dois terços)</option>
 								</select>
-								<label class="form-label" for="create-vote-form-quorum">Kvorumo (nur por j/n/s)</label>
+								<label class="form-label" for="create-vote-form-quorum">Quorum (apenas para s/n/a)</label>
 							</div>
 						</div>
 
 						<div class="form-group form-float">
 							<div class="form-line">
 								<select id="create-vote-form-majority" name="majority" class="form-control" required>
-									<option value="0">Neniu necesa (plimulto)</option>
-									<option value="plej">Pli ol duono (plejmulto)</option>
-									<option value="2/3">Du-trionoj</option>
+									<option value="0">Maioria simples</option>
+									<option value="plej">Maioria absoluta</option>
+									<option value="2/3">Dois terços</option>
 								</select>
-								<label class="form-label" for="create-vote-form-majority">Plejmulto (nur por j/n/s)</label>
+								<label class="form-label" for="create-vote-form-majority">Maioria (apenas para s/n/a)</label>
 							</div>
 						</div>
 
 						<div class="form-group form-float">
 							<div class="form-line">
 								<input type="number" id="create-vote-form-numWinners" name="numWinners" class="form-control" required min="1" step="1" value="1" disabled>
-								<label class="form-label" for="create-vote-form-numWinners">Elektotaj kandidatoj (nur por UTV)</label>
+								<label class="form-label" for="create-vote-form-numWinners">Candidatos elegíveis (UTV)</label>
 							</div>
 						</div>
 
@@ -102,18 +102,18 @@
 							<div class="form-line">
 								<textarea id="create-vote-form-opts" name="opts" rows="1"
 									class="form-control no-resize autosize" disabled></textarea>
-								<label class="form-label" for="create-vote-form-opts">Kandidatoj (nur por PR kaj UTV, po unu linio)</label>
+								<label class="form-label" for="create-vote-form-opts">Candidatos (PR e UTV, um por linha)</label>
 							</div>
 						</div>
 
 						<div>
 							<input type="checkbox" id="create-vote-form-secret" name="secret" class="filled-in">
-							<label for="create-vote-form-secret">Sekreta voĉdono</label>
+							<label for="create-vote-form-secret">Voto secreto</label>
 						</div>
 
 						<button type="submit" id="create-vote-form-submit" class="btn btn-primary m-t-15 waves-effect">
 							<i class="material-icons">add</i>
-							<span>Krei</span>
+							<span>Criar</span>
 						</button>
 					</form>
 				</div>
@@ -121,22 +121,22 @@
 			{{/if}}
 			<div class="card">
 				<div class="header">
-					<h2>Retaj voĉdonoj</h2>
-					<small>Ĉiuj horoj estas laŭ UTC</small>
+					<h2>Votações online</h2>
+					<small>Todos os horários estão em UTC</small>
 				</div>
 				<div class="body">
 					<table id="votes-list" class="table table-striped">
 						<thead>
 							<th></th>
-							<th>Komenchoro</th>
-							<th>Limhoro</th>
-							<th>Titolo</th>
-							<th>Stato</th>
+							<th>Horário de abertura</th>
+							<th>Horário de encerramento</th>
+							<th>Título</th>
+							<th>Status</th>
 						</thead>
 						<tbody>
 							{{#each page.votes}}
 							<tr data-id="{{./id}}" data-timeto="{{./timeTo}}">
-								<td><i class="material-icons clickable about-vote" title="Pri la voĉdono">info</i></td>
+								<td><i class="material-icons clickable about-vote" title="Sobre a votação">info</i></td>
 								<td>{{dateTimeSimple ./timeFrom}}</td>
 								<td>{{dateTimeSimple ./timeTo}}</td>
 								<td>{{./name}}</td>
@@ -154,7 +154,7 @@
 						</tbody>
 					</table>
 					{{#unless page.votes.length}}
-					<p>Estas neniu aktiva baloto en kiu vi rajtas voĉdoni.</p>
+					<p>Não há nenhuma votação ativa na qual você possa votar.</p>
 					{{/unless}}
 				</div>
 			</div>
@@ -169,14 +169,14 @@
 		<div class="col col-sm-6">
 			<button class="about-vote-modal-delete btn btn-danger btn-block waves-effect">
 				<i class="material-icons">delete_forever</i>
-				Forigi voĉdonon
+				Excluir votação
 			</button>
 		</div>
 		{{#unless ./hasEnded}}
 		<div class="col col-sm-6">
 			<button class="about-vote-modal-deadline btn btn-primary btn-block waves-effect">
 				<i class="material-icons">calendar_today</i>
-				Ŝovi limhoron
+				Adiar encerramento
 			</button>
 		</div>
 		{{/unless}}
@@ -184,29 +184,29 @@
 	{{/if}}
 	<table class="align-left table-align-top">
 		<tr>
-			<td><b>Nomo</b></td>
+			<td><b>Nome</b></td>
 			<td>{{./name}}</td>
 		</tr>
 		<tr>
 			<td><b>Tipo</b></td>
 			<td>
 				{{#switch ./type}}
-					{{#case 'jns'}}Jes/Ne/Sindeteno{{/case}}
+					{{#case 'jns'}}Sim/Não/Abstenção{{/case}}
 					{{#case 'pr'}}Paroranga Metodo{{/case}}
 					{{#case 'utv'}}Unuopa Transdonebla Voĉo{{/case}}
 				{{/switch}}
 			</td>
 		</tr>
 		<tr>
-			<td><b>Priskribo</b></td>
+			<td><b>Descrição</b></td>
 			<td><pre>{{./description}}</pre></td>
 		</tr>
 		<tr>
-			<td><b>Sekreta</b></td>
-			<td>{{#if ./secret}}Jes{{else}}Ne{{/if}}</td>
+			<td><b>Secreta</b></td>
+			<td>{{#if ./secret}}Sim{{else}}Não{{/if}}</td>
 		</tr>
 		<tr>
-			<td><b>Voĉdonrajtantoj</b></td>
+			<td><b>Votantes</b></td>
 			<td>
 				{{#each ./groups}}
 					{{./this}}{{#unless @last}}, {{/unless}}
@@ -214,21 +214,21 @@
 			</td>
 		</tr>
 		<tr>
-			<td><b>Komenchoro</b></td>
+			<td><b>Horário de abertura</b></td>
 			<td>{{dateTimeSimple ./timeFrom}}</td>
 		</tr>
 		<tr>
-			<td><b>Limhoro</b></td>
+			<td><b>Horário de encerramento</b></td>
 			<td>{{dateTimeSimple ./timeTo}}</td>
 		</tr>
 		{{#switch ./type}}
 			{{#case 'jns'}}
 				<tr>
-					<td><b>Kvorumo</b></td>
+					<td><b>Quorum</b></td>
 					<td>≥ {{numberFormat ./quorum decimalLength="3" decimalSep=","}}</td>
 				</tr>
 				<tr>
-					<td><b>Plejmulto</b></td>
+					<td><b>Maioria</b></td>
 					<td>
 						{{#if ./majorityMustBeGreater}}≥{{else}}>{{/if}}
 						{{numberFormat ./majority decimalLength="3" decimalSep=","}}
@@ -237,13 +237,13 @@
 			{{/case}}
 			{{#case 'utv'}}
 				<tr>
-					<td><b>Elektotaj kandidatoj</b></td>
+					<td><b>Candidatos elegíveis</b></td>
 					<td>{{./numWinners}}</td>
 				</tr>
 			{{/case}}
 			{{#case 'pr' 'utv'}}
 				<tr>
-					<td><b>Kandidatoj</b></td>
+					<td><b>Candidatos</b></td>
 					<td>
 						<ul>
 						{{#each ./opts}}
@@ -255,11 +255,11 @@
 			{{/case}}
 		{{/switch}}
 		<tr>
-			<td><b>Voĉdonintoj</b></td>
+			<td><b>Quem votou</b></td>
 			<td>
 				{{./numBallotsCast}} el {{./numAllowedToVote}} rajtantoj<br>
 				{{#if ./usersNotVotedNames}}
-					<i>Ne voĉdonis:</i><br>
+					<i>Não votou:</i><br>
 					{{#each ./usersNotVotedNames}}
 						{{this}}{{#unless @last}}, {{/unless}}
 					{{/each}}
@@ -268,39 +268,39 @@
 		</tr>
 		{{#if ./hasEnded}}
 		<tr>
-			<td><b>Rezulto</b></td>
+			<td><b>Resultado</b></td>
 			<td>
 				{{#if ./results.isSindeteno}}
 					{{#switch ./type}}
 						{{#case 'jns'}}
-						Sindetene ({{./results.tally.j}} jesis, {{./results.tally.n}} neis, {{./results.tally.s}} sindetenis)
+						Sindetene ({{./results.tally.j}} votaram "Sim", {{./results.tally.n}} votaram "Não", {{./results.tally.s}} se abstiveram)
 						{{/case}}
 						{{#case 'pr' 'utv'}}
-						Sindetene ({{./results.vochoResults.ballots}} balotiloj kalkulitaj, {{./results.vochoResults.blankBallots}} blankaj)
+						Sindetene ({{./results.vochoResults.ballots}} votos calculados, {{./results.vochoResults.blankBallots}} brancos)
 						{{/case}}
 					{{/switch}}
 				{{else}}
 					{{#switch ./type}}
 						{{#case 'jns'}}
 							<p>
-								Kvorumo {{#unless ./results.reachedQuorum}}ne{{/unless}} atingita,
-								{{#unless ./results.hasMajority}}ne{{/unless}} havas sufiĉe da jesaj voĉoj →
-								{{#unless ./results.isAccepted}}Ne{{/unless}} akceptita
+								Quorum {{#unless ./results.reachedQuorum}}não{{/unless}} atingido,
+								{{#unless ./results.hasMajority}}não{{/unless}} houve votos "Sim" suficientes →
+								{{#unless ./results.isAccepted}}Não{{/unless}} aceito
 							</p>
 							<p>
-								{{./results.tally.j}} jesis, {{./results.tally.n}} neis, {{./results.tally.s}} sindetenis
+								{{./results.tally.j}} votaram "Sim", {{./results.tally.n}} votaram "Não", {{./results.tally.s}} se abstiverem
 							</p>
 						{{/case}}
 						{{#case 'pr'}}
 							{{#if ./results.vochoResults}}
-								<p>Egalecrompanto {{#unless ./tieBreakerBallot}}ne{{/unless}} estis bezonata.</p>
-								<p>{{./results.vochoResults.ballots}} balotiloj kalkulitaj, {{./results.vochoResults.blankBallots}} blankaj</p>
-								<p>Komparitaj paroj:</p>
+								<p>Um rompedor de empates {{#unless ./tieBreakerBallot}}não{{/unless}} foi necessário.</p>
+								<p>{{./results.vochoResults.ballots}} votos calculados, {{./results.vochoResults.blankBallots}} brancos</p>
+								<p>Pares comparados:</p>
 								<table class="table table-striped">
 									<thead>
-										<th>Paro</th>
-										<th>Gajnanto</th>
-										<th>Diferenco</th>
+										<th>Par</th>
+										<th>Vencedor</th>
+										<th>Diferença</th>
 									</thead>
 									<tbody>
 										{{#each ./results.vochoResults.rankedPairs as |rankedPair|}}
@@ -309,7 +309,7 @@
 													{{lookup voteRoot.results.vochoAliasesInverse rankedPair.[0].[0]}}
 													({{lookup rankedPair.[1] rankedPair.[0].[0]}})
 
-													kontraŭ
+													contra
 
 													{{lookup voteRoot.results.vochoAliasesInverse rankedPair.[0].[1]}}
 													({{lookup rankedPair.[1] rankedPair.[0].[1]}})
@@ -328,7 +328,7 @@
 								<table class="table table-striped">
 									<thead>
 										<th>De</th>
-										<th>Al</th>
+										<th>A</th>
 									</thead>
 									<tbody>
 										{{#each ./results.vochoResults.graph as |graphValue graphKey|}}
@@ -345,15 +345,15 @@
 										{{/each}}
 									</tbody>
 								</table>
-								<p>Venkinto: {{lookup voteRoot.results.vochoAliasesInverse voteRoot.results.vochoResults.winner}}</p>
+								<p>Vencedor: {{lookup voteRoot.results.vochoAliasesInverse voteRoot.results.vochoResults.winner}}</p>
 							{{else}}
-								Atendas egalecrompanton …
+								Aguardando o rompedor de empates …
 							{{/if}}
 						{{/case}}
 						{{#case 'utv'}}
 							{{#if ./results.vochoResults}}
-								<p>Egalecrompanto {{#unless ./tieBreakerBallot}}ne{{/unless}} estis bezonata.</p>
-								<p>{{./results.vochoResults.ballots}} balotiloj kalkulitaj, {{./results.vochoResults.blankBallots}} blankaj</p>
+								<p>Um rompedor de empates {{#unless ./tieBreakerBallot}}não{{/unless}} foi necessário.</p>
+								<p>{{./results.vochoResults.ballots}} votos calculados, {{./results.vochoResults.blankBallots}} brancos</p>
 								<p>Elektiĝkvoto: {{numberFormat ./results.vochoResults.quota decimalLength="3" decimalSep=","}}</p>
 								<table class="table table-striped">
 									<thead>
@@ -392,13 +392,13 @@
 									</tbody>
 								</table>
 								<p>
-									Venkintoj (laŭ ordo de elektiĝo):
+									Vencedores (em ordem de eleição):
 									{{#each ./results.vochoResults.winners}}
 										{{lookup voteRoot.results.vochoAliasesInverse this}}{{#unless @last}},{{/unless}}
 									{{/each}}
 								</p>
 							{{else}}
-								Atendas egalecrompanton …
+								Aguardando o rompedor de empates …
 							{{/if}}
 						{{/case}}
 					{{/switch}}
@@ -406,14 +406,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td><b>Balotiloj</b></td>
+			<td><b>Votos</b></td>
 			<td>
-				<p>Tiu ĉi baloto {{#unless ./secret}}ne{{/unless}} estas sekreta, tial {{#if ./secret}}ne{{/if}} eblas vidi kiel ĉiu rajtinto voĉdonis.</p>
+				<p>ESte voto {{#unless ./secret}}não{{/unless}} é secreto, por isso {{#if ./secret}}não{{/if}} é possível ver como cada membro votou.</p>
 				{{#unless ./secret}}
 					<table class="table table-striped">
 						<thead>
-							<th>Nomo</th>
-							<th>Balotilo</th>
+							<th>Nome</th>
+							<th>Voto</th>
 						</thead>
 						<tbody>
 							{{#each ./results.ballots as |ballotEntry|}}
@@ -423,9 +423,9 @@
 										{{#switch voteRoot.type}}
 											{{#case 'jns'}}
 												{{#switch ballotEntry.ballot}}
-													{{#case 'j'}}Jes{{/case}}
-													{{#case 'n'}}Ne{{/case}}
-													{{#case 's'}}Sindetene{{/case}}
+													{{#case 'j'}}Sim{{/case}}
+													{{#case 'n'}}Não{{/case}}
+													{{#case 's'}}Abstenção{{/case}}
 												{{/switch}}
 											{{/case}}
 											{{#case 'pr'}}

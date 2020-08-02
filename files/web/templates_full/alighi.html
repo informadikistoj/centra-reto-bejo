@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{csrf_token}}">
-    <title>Krei konton | Centra Reto</title>
+    <title>Criar conta | Centra Reto</title>
 
     <!-- Favicon-->
     <link rel="icon" href="/images/favicon.png?{{&version}}">
@@ -47,7 +47,7 @@
                             <i class="material-icons">email</i>
                         </span>
                         <div class="form-line">
-                            <input type="email" class="form-control" placeholder="Retpoŝtadreso" value="{{page.email}}" name="email" id="email-input" required readonly>
+                            <input type="email" class="form-control" placeholder="E-mail" value="{{page.email}}" name="email" id="email-input" required readonly>
                             <!-- TODO: Give this a different style to show that it's readonly -->
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" minlength="6" placeholder="Pasvorto" required autofocus>
+                            <input type="password" class="form-control" name="password" minlength="6" placeholder="Senha" required autofocus>
                         </div>
                     </div>
                     <div class="input-group">
@@ -64,15 +64,15 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="confirm" minlength="6" placeholder="Ripeto de pasvorto" required>
+                            <input type="password" class="form-control" name="confirm" minlength="6" placeholder="Confirme a senha" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="terms" id="terms" class="filled-in chk-col-pink" required>
-                        <label for="terms">Mi konsentas je la <a href="/kondichoj">kondiĉoj de uzo</a>.</label>
+                        <label for="terms">Eu concordo com os <a href="/kondichoj">termos de uso</a>.</label>
                     </div>
 
-                    <button class="btn btn-block btn-lg bg-green waves-effect" type="submit" id="submit-button">ALIĜI</button>
+                    <button class="btn btn-block btn-lg bg-green waves-effect" type="submit" id="submit-button">CRIAR CONTA</button>
                 </form>
             </div>
         </div>

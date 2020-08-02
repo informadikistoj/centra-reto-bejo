@@ -20,9 +20,9 @@ $(function () {
 					if (pageData.isTieBreaker) {
 						return swal({
 							icon: 'warning',
-							title: 'Nevalida balotilo',
-							text: 'Egalecrompaj balotiloj devas listigi ĉiujn opciojn.',
-							button: 'Bone'
+							title: 'Voto inválido',
+							text: 'O voto do rompedor de empates deve listar todas as opções.',
+							button: 'OK'
 						});
 					} else {
 						continue;
@@ -32,9 +32,9 @@ $(function () {
 				if (!Number.isSafeInteger(val)) {
 					return swal({
 						icon: 'warning',
-						title: 'Nevalida balotilo',
-						text: 'Bonvolu enmeti nur entjerojn.',
-						button: 'Bone'
+						title: 'Voto inválido',
+						text: 'Por favor, utilize apenas números inteiros.',
+						button: 'OK'
 					});
 				}
 				values.push({
@@ -64,9 +64,9 @@ $(function () {
 					if (entry.length > 1) {
 						return swal({
 							icon: 'warning',
-							title: 'Nevalida balotilo',
-							text: 'Pluraj opcioj ne rajtas havi la saman numeron',
-							button: 'Bone'
+							title: 'Voto inválido',
+							text: 'Não é possível dar o mesmo número para mais de uma opção.',
+							button: 'OK'
 						});
 					}
 				}
@@ -74,11 +74,11 @@ $(function () {
 		}
 
 		swal({
-			title: 'Ĉu vi certas pri viaj elektoj?',
+			title: 'Você tem certeza da sua escolha?',
 			buttons: [
-				'Nuligi',
+				'Cancelar',
 				{
-					text: 'Voĉdoni',
+					text: 'Votar',
 					closeModal: false
 				}
 			]
@@ -96,8 +96,8 @@ $(function () {
 					swal.stopLoading();
 					swal({
 						icon: 'success',
-						title: 'Vi sukcese voĉdonis, dankon!',
-						buttons: 'Reveni'
+						title: 'Voto registrado com sucesso!',
+						buttons: 'Voltar'
 					}).then(function () {
 						location.href = '/vochdonado/retaj';
 					});

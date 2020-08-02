@@ -36,8 +36,8 @@ $(function () {
 
             		swal({
             			icon: 'success',
-            			title: 'Nova pasvorto kreita',
-            			text: 'Via nova pasvorto estis efektivigita. Vi nun povas ensaluti.'
+            			title: 'Sua nova senha foi criada',
+            			text: 'Sua nova senha já está funcionando. Agora você pode entrar no Centra Reto.'
             		}).then(function () {
             			window.location.href = '/ensaluti';
             		});

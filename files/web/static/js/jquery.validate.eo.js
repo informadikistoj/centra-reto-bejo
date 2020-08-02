@@ -3,18 +3,18 @@
  * Locale: EO (Esperanto; Esperanto)
  */
 $.extend( $.validator.messages, {
-	required: "Tiu ĉi kampo estas deviga",
-	remote: "Bonvolu korekti tiun ĉi kampon",
-	email: "Bonvolu enmeti validan retpoŝtadreson",
-	url: "Bonvolu enmeti validan retadreson",
-	date: "Bonvolu enmeti validan daton",
-	number: "Bonvolu enmeti numeron",
-	digits: "Bonvolu enmeti nur ciferojn",
-	creditcard: "Bonvolu enmeti validan kreditkartnumeron",
-	equalTo: "Bonvolu enmeti la saman valoron denove",
-	time: "Bonvolu enmeti validan horon inter 00:00 kaj 23:59",
-	ipv4: "Bonvolu enmeti validan IPv4-adreson",
-	ipv6: "Bonvolu enmeti validan IPv6-adreson",
-	maxlength: $.validator.format( "Bonvolu enmeti maksimume {0} signojn" ),
-	minlength: $.validator.format( "Bonvolu enmeti minimume {0} signojn" )
+	required: "Este campo é obrigatório",
+	remote: "Por favor, corrija este campo",
+	email: "Digite um endereço de e-mail válido",
+	url: "Digite uma URL válida",
+	date: "Digite uma data válida",
+	number: "Digite um número",
+	digits: "Digite apenas números",
+	creditcard: "Digite um número de cartão de crédito válido",
+	equalTo: "Digite o mesmo valor mais uma vez",
+	time: "Digite uma hora válida entre 00:00 e 23:59",
+	ipv4: "Digite um endereço IPv4 válido",
+	ipv6: "Digite um endereço IPv6 válido",
+	maxlength: $.validator.format( "Digite no máximo {0} caracteres" ),
+	minlength: $.validator.format( "Digite no mínimo {0} caracteres" )
 } );

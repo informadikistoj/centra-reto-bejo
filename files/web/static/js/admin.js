@@ -796,16 +796,16 @@ function showError (error) {
 		if (navigator.onLine) {
 			swal({
 				icon: 'error',
-				title: 'Ne sukcesis konekti al la servilo',
-				text: 'Ni ne sukcesis konekti al la servilo.\nBonvolu reŝarĝi la paĝon kaj provi denove.',
-				button: 'Bone'
+				title: 'Erro ao conectar ao servidor',
+				text: 'Não conseguimos conexão com o servidor.\nPor favor, atualize a página e tente novamente.',
+				button: 'OK'
 			});
 		} else {
 			swal({
 				icon: 'error',
-				title: 'Vi ne estas konektita al la interreto',
-				text: 'Via interretkonekto malaperis.\nBonvolu reŝarĝi la paĝon kaj provi denove.',
-				button: 'Bone'
+				title: 'Sem conexão com a internet',
+				text: 'Parece que você não está conectado à internet.\nPor favor, atualize a página e tente novamente.',
+				button: 'OK'
 			});
 		}
 		return;
@@ -814,9 +814,9 @@ function showError (error) {
 	if (error.error === 'HTTP' && error.info[0] === 500) {
 		swal({
 			icon: 'error',
-			title: 'Okazis interna eraro',
-			text: 'Okazis interna servileraro. Estas nenio kion vi povas fari.\nBonvolu provi denove poste.',
-			button: 'Bone'
+			title: 'Error no servidor',
+			text: 'Ocorreu um erro no servidor.\nPor favor, tente novamente mais tarde.',
+			button: 'OK'
 		});
 
 		return
@@ -826,9 +826,9 @@ function showError (error) {
 		console.error(error);
 		swal({
 			icon: 'warning',
-			title: 'Vi estis elsalutigita',
-			text: 'Vi ne plu estas ensalutinta en Centra Reto. Bonvolu konservi eventualajn gravajn ŝanĝojn aliloke kaj reensaluti.',
-			button: 'Bone'
+			title: 'Você foi desconectado(a)',
+			text: 'Você não está mais conectado(a) ao Centra Reto. Por favor, salve as alterações importantes em outro lugar e entre novamente.',
+			button: 'OK'
 		});
 
 		return;
@@ -841,12 +841,12 @@ function showError (error) {
 		error = JSON.stringify(error, null, 2);
 	}
 	var div = document.createElement('div');
-	div.innerHTML = '<p>Vi povas provi denove aŭ sendi la suban erarmesaĝon al <a href="mailto:reto@tejo.org">reto@tejo.org</a>.<p><textarea class="cr-code" readonly>' + error + '</textarea>';
+	div.innerHTML = '<p>Você pode tentar novamente ou enviar a mensagem de erro abaixo para <a href="mailto:bejo@esperanto.org.br">bejo@esperanto.org.br</a>.<p><textarea class="cr-code" readonly>' + error + '</textarea>';
 	swal({
-		title: 'Okazis eraro',
+		title: 'Ocorreu um erro',
 		icon: 'error',
 		content: div,
-		button: 'Bone'
+		button: 'OK'
 	});
 	console.error(error);
 }
@@ -1050,7 +1050,7 @@ function setUpDataTable (options) {
 						if (dataFormatter) { val = dataFormatter(val, col); }
 
 						if (typeof val === 'boolean') {
-							val = val ? 'Jes' : 'Ne';
+							val = val ? 'Sim' : 'Não';
 						}
 
 						entry.push(val);

@@ -21,10 +21,10 @@
                 .catch(function (err) {
                     if (err.error === 'USER_NOT_FOUND') {
                         swal({
-                            title: 'Ensaluto ne sukcesis',
+                            title: 'Falha ao entrar',
                             icon: 'error',
-                            text: 'La retpoŝtadreso aŭ pasvorto ne ĝustas.',
-                            button: 'Bone'
+                            text: 'O endereço de e-mail ou a senha está incorreta.',
+                            button: 'OK'
                         });
                     } else {
                         showError(err);

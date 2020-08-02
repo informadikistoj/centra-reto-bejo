@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{csrf_token}}">
-    <title>Fini vian profilon | Centra Reto</title>
+    <title>Complete seu perfil | Centra Reto</title>
 
     <!-- Favicon-->
     <link rel="icon" href="/images/favicon.png?{{&version}}">
@@ -39,11 +39,10 @@
 
         <div class="card">
             <div class="body">
-                <h1>Bonvenon!</h1>
-                <p class="lead">Antaŭ ol vi povas aliri la funkciojn de Centra Reto vi devas unue fini vian profilon</p>
-                <p>Ĉiu aktivulo en Centra Reto havas profilon, kiu estas publike videbla. Rilate preskaŭ ĉiun informon pri vi estas via elekto ĉu ĝi estu publika, tamen estas kelkaj esencaj informoj kiuj devas esti videblaj de ĉiuj; eĉ homoj sen konto en Centra Reto.</p>
-                <p>Bonvolu enmeti ĉi-sube informojn pri vi kiuj estos publike videblaj.</p>
-                <p>Kelkaj el la kampoj povas ŝajni superfluaj, sed ili necesas pro la internacieco de nomoj de esperantistoj por respekti ĉies nomon.</p>
+                <h1>Boas-vindas!</h1>
+                <p class="lead">Antes de começar a usar as funções do Centra Reto da BEJO, você deve completar seu perfil.</p>
+                <p>Todo membro da BEJO no Centra Reto tem um perfil público. Se preferir, você pode ocultar quase todas as informações a seu respeito, no entanto, algumas informações essenciais serão visíveis a todos; até mesmo àqueles que não têm conta no Centra Reto.</p>
+                <p>Por favor, preencha os campos abaixo. As informações desses campos serão públicas.</p>
             </div>
         </div>
 
@@ -52,39 +51,39 @@
                 <form id="finish_profile">
                     <div class="form-group">
                         <label for="form-full_name_latin">
-                            * Via plena nomo, laŭ la ordo de via denaska lingvo, per latinaj literoj <br>
-                            <span class="cr-form-span">Skribu vian nomon tiel kiel vi volas, ke ĝi estu videbla de la publiko. Ĝi ne nepre devas kongrui kun la nomo en via pasporto.</span><br>
-                            Ekz: Ludwik Łazarz Zamenhof
+                            * Seu nome completo, na ordem da sua língua nativa, em caracteres latinos <br>
+                            <span class="cr-form-span">Escreva seu nome do jeito que você quer que ele seja visível ao público. Ele não precisa, necessariamente, ser o mesmo que consta no seu documento de identificação.</span><br>
+                            Ex: Ludwik Łazarz Zamenhof
                         </label>
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="material-icons">person</i>
                             </span>
                             <div class="form-line">
-                                <input class="form-control" name="full_name_latin" placeholder="Plena nomo per latinaj literoj en origina ordo" id="form-full_name_latin" required autofocus maxlength="80">
+                                <input class="form-control" name="full_name_latin" placeholder="Nome completo em caracteres latinos na ordem original" id="form-full_name_latin" required autofocus maxlength="80">
                             </div>
                         </div>    
                     </div>
 
                     <div class="form-group">
                         <label for="form-full_name_latin_sort">
-                            * Via nomo per latinaj literoj laŭ sekva ordo: <span class="cr-form-span">familinomo(j), meznomo(j), persona(j) nomo(j), gepatronomo(j), ĉiuj aliaj nomoj, titolo(j)</span> <br>
-                            Ekz: Zamenhof Ludwik Łazarz
+                            * Seu nome, em caracteres latinos, na seguinte ordem: <span class="cr-form-span">sobrenome(s), nome(s) do meio, primeiro(s) nome(s), todos os outros nomes, título(s)</span> <br>
+                            Ex: Zamenhof Ludwik Łazarz
                         </label>
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="material-icons">person</i>
                             </span>
                             <div class="form-line">
-                                <input class="form-control" name="full_name_latin_sort" placeholder="Plena nomo per latinaj literoj en ordigita formo" id="form-full_name_latin_sort" required maxlength="80">
+                                <input class="form-control" name="full_name_latin_sort" placeholder="Nome completo em caracteres latinos de forma ordenada" id="form-full_name_latin_sort" required maxlength="80">
                             </div>
                         </div>    
                     </div>
 
                     <div class="form-group">
                         <label for="form-nickname">
-                            * La nomo per kiu oni (formale) alvokas vin, kutime via persona nomo <br>
-                            Ekz: Ludwik
+                            * O nome pelo qual (formalmente) te chamam, geralmente, seu(s) primeiro(s) nome(s) <br>
+                            Ex: Ludwik
                         </label>
                         <div class="input-group">
                             <span class="input-group-addon">
@@ -97,27 +96,27 @@
                     </div>
 
                     <div class="form-group">
-                        <p>Se vi havas apartan kromnomon, kiu <b>ne</b> estas parto de via plena nomo:</p>
-                        <label for="form-pet_name">Via (neformala) kromnomo</label>
+                        <p>Se você tiver um apelido que <b>não</b> faz parte do seu nome completo:</p>
+                        <label for="form-pet_name">Seu apelido</label>
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="material-icons">person</i>
                             </span>
                             <div class="form-line">
-                                <input class="form-control" name="pet_name" placeholder="Kromnomo" id="form-pet_name" maxlength="80">
+                                <input class="form-control" name="pet_name" placeholder="Apelido" id="form-pet_name" maxlength="80">
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>* La pronomoj per kiuj oni priparolu vin</label>
+                        <label>* O(s) pronome(s) que deve(m) ser usado(s) para fazer referência a você</label>
                         <div class="radio">
                             <input type="radio" name="pronouns" id="form-pronouns_none" value="none" class="with-gap radio-col-green" required>
-                            <label for="form-pronouns_none">Mi ne volas indiki / Uzu mian nomon</label>
+                            <label for="form-pronouns_none">Não quero indicar / Usem meu nome</label>
                         </div>
                         <div class="radio">
                             <input type="radio" name="pronouns" id="form-pronouns_list" value="list" class="with-gap radio-col-green" required>
-                            <label for="form-pronouns_list">Uzu la jena(j)n:</label>
+                            <label for="form-pronouns_list">Usem este(s):</label>
                             <div class="cr-pronouns-list">
                                 <span>
                                     <input type="checkbox" name="pronouns_list[]" value="ĝi" id="form-pronouns_list_ghi" class="filled-in chk-col-orange">
@@ -139,11 +138,11 @@
                         </div>
                     </div>
                     
-                    <button class="btn btn-block btn-lg bg-green waves-effect" type="submit" id="submit-button">FINI PROFILON</button>
+                    <button class="btn btn-block btn-lg bg-green waves-effect" type="submit" id="submit-button">COMPLETAR PERFIL</button>
 
                     <div class="form-line">
                         <br>
-                        <span>* deviga</span>
+                        <span>* obrigatório</span>
                     </div>
                 </form>
             </div>

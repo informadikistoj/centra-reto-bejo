@@ -124,10 +124,10 @@ $(function () {
 
 				var pageId;
 				if (n === 0) { // Previous page
-					a.textContent = 'Antaŭa';
+					a.textContent = 'Anterior';
 					pageId = currentPage - 1;
 				} else if (n === totalPages) { // Next page
-					a.textContent = 'Venonta';
+					a.textContent = 'Próxima';
 					pageId = currentPage + 1;
 				} else { // Page number
 					a.textContent = n;

@@ -47,7 +47,7 @@ $(function () {
 					finalFn = function () {
 						swal({
 							icon: 'success',
-							title: 'Profilbildo sukcese ŝanĝita',
+							title: 'Sua foto de perfil foi alterada',
 							text: ' ', // Necessary to fix issues with missing body
 							buttons: false,
 							timer: 1500
@@ -90,12 +90,12 @@ $(function () {
 
 		template.find('.remove-profile-picture-button').click(function () {
 			swal({
-				title: 'Forigo de profilbildo',
-				text: 'Ĉu vi certas, ke vi volas forigi vian profilbildon?',
+				title: 'Remover foto de perfil',
+				text: 'Deseja remover sua foto de perfil?',
 				buttons: [
-					'Nuligi',
+					'Cancelar',
 					{
-						text: 'Forigi',
+						text: 'Remover',
 						closeModal: false
 					}
 				]
@@ -112,12 +112,12 @@ $(function () {
 		});
 
 		swal({
-			title: 'Ŝanĝi profilbildon',
+			title: 'Mudar foto de perfil',
 			content: template[0],
 			buttons: [
-				'Fermi',
+				'Fechar',
 				{
-					text: 'Konservi',
+					text: 'Salvar',
 					closeModal: false
 				}
 			]

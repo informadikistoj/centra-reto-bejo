@@ -42,10 +42,10 @@ $(function () {
                             }
 
                             swal({
-                                title: 'Bonvenon',
+                                title: 'Boas-vindas',
                                 icon: 'success',
-                                text: 'Vi sukcese aliĝis al Centra Reto.',
-                                button: 'Bone'
+                                text: 'Sua conta foi criada com sucesso.',
+                                button: 'OK'
                             }).then(function () {
                                 window.location = '/';
                             });

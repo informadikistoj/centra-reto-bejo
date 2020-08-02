@@ -121,11 +121,11 @@ $(function () {
 		}
 
 		swal({
-			title: 'Ĉu vi certas, ke vi volas krei novan voĉdonon?',
+			title: 'Deseja criar uma nova votação?',
 			buttons: [
-				'Nuligi',
+				'Cancelar',
 				{
-					text: 'Krei',
+					text: 'Criar',
 					closeModal: false
 				}
 			]
@@ -153,11 +153,11 @@ $(function () {
 
 		modalTemplate.find('.about-vote-modal-delete').click(function () {
 			swal({
-				title: 'Ĉu vi certas, ke vi volas forigi la voĉdonon?',
+				title: 'Deseja excluir a votação?',
 				buttons: [
-					'Nuligi',
+					'Cancelar',
 					{
-						text: 'Forigi',
+						text: 'Excluir',
 						closeModal: false
 					}
 				]
@@ -198,12 +198,12 @@ $(function () {
 			});
 
 			swal({
-				title: 'Ŝovo de limhoro',
+				title: 'Adiar horário limite',
 				content: deadlineModal[0],
 				buttons: [
-					'Nuligi',
+					'Cancelar',
 					{
-						text: 'Ŝovi',
+						text: 'Adiar',
 						closeModal: false
 					}
 				]
@@ -224,7 +224,7 @@ $(function () {
 		});
 		
 		swal({
-			title: 'Pri voĉdono',
+			title: 'Sobre a votação',
 			content: modalTemplate[0]
 		});
 	});

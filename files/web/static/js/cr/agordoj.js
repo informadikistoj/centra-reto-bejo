@@ -39,10 +39,10 @@ $(function () {
     	},
     	messages: {
     		'pet_name': {
-    			notEqualTo: 'Nur indiku kromnomon se ĝi ne estas parto de via plena nomo'
+    			notEqualTo: 'Não indique um apelido se ele já fizer parte do seu nome completo'
     		},
     		'full_name_native': {
-            	notEqualTo: 'Nur indiku nomon per via propra skribsistemo se ĝi ne estas skribita per latinaj literoj'
+            	notEqualTo: 'Não indique um nome em seu próprio sistema de escrita se ele já for escrito em caracteres latinos'
             }
     	},
         highlight: function (input) {
@@ -122,8 +122,8 @@ $(function () {
 
                     swal({
                     	icon: 'success',
-                    	title: 'Informoj pri vi ĝisdatigitaj',
-                    	button: 'Fermi'
+                    	title: 'Suas informações foram atualizadas',
+                    	button: 'Fechar'
                     });
                 });
         }
@@ -134,12 +134,12 @@ $(function () {
 		e.preventDefault();
 
 		swal({
-			title: 'Ŝanĝo de retpoŝtadreso',
-			text: 'Ĉu vi certas, ke vi volas ŝanĝi vian retpoŝtadreson?',
+			title: 'Alterar endereço de e-mail',
+			text: 'Tem certeza que deseja alterar seu endereço de e-mail?',
 			buttons: [
-				'Nuligi',
+				'Cancelar',
 				{
-					text: 'Ŝanĝi',
+					text: 'Alterar',
 					closeModal: false
 				}
 			]
@@ -157,8 +157,8 @@ $(function () {
 				.then(function (res) {
 					swal({
 						icon: 'success',
-						title: 'Retpoŝtadreso ŝanĝita',
-						button: 'Fermi'
+						title: 'O endereço de e-mail foi alterado',
+						button: 'Fechar'
 					});
 
 					$('#leftsidebar .email').text(apiData.email);
@@ -166,9 +166,9 @@ $(function () {
 				.catch(function (err) {
 					if (err.error === 'EMAIL_TAKEN') {
 						swal({
-					        title: 'Retpoŝtadreso jam uzata',
+					        title: 'Este endereço de e-mail já está em uso',
 					        icon: 'error',
-					        button: 'Bone'
+					        button: 'OK'
 					    });
 					} else {
 						showError(err);
@@ -199,12 +199,12 @@ $(function () {
 		},
 		submitHandler: function (form) {
 			swal({
-				title: 'Ŝanĝo de pasvorto',
-				text: 'Ĉu vi certas, ke vi volas ŝanĝi vian pasvorton?',
+				title: 'Alterar senha',
+				text: 'Tem certeza que deseja alterar sua senha?',
 				buttons: [
-					'Nuligi',
+					'Cancelar',
 					{
-						text: 'Ŝanĝi',
+						text: 'Alterar',
 						closeModal: false
 					}
 				]
@@ -223,8 +223,8 @@ $(function () {
 					.then(function (res) {
 						swal({
 							icon: 'success',
-							title: 'Pasvorto ŝanĝita',
-							button: 'Fermi'
+							title: 'A senha foi alterada',
+							button: 'Fechar'
 						});
 						form.reset();
 					})
@@ -232,7 +232,7 @@ $(function () {
 						if (err.error === 'WRONG_OLD_PASSWORD') {
 							swal.close();
 							passwordValidator.showErrors({
-								password_old: 'Malĝusta pasvorto'
+								password_old: 'Senha incorreta'
 							});
 						} else {
 							showError(err);

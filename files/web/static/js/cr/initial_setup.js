@@ -22,10 +22,10 @@ $(function () {
     	},
         messages: {
             'pet_name': {
-                notEqualTo: 'Nur indiku kromnomon se ĝi ne estas parto de via plena nomo'
+                notEqualTo: 'Não indique um apelido se ele já fizer parte do seu nome completo'
             },
             'full_name_native': {
-                notEqualTo: 'Nur indiku nomon per via propra skribsistemo se ĝi ne estas skribita per latinaj literoj'
+                notEqualTo: 'Não indique um nome em seu próprio sistema de escrita se ele já for escrito em caracteres latinos'
             }
         },
         highlight: function (input) {

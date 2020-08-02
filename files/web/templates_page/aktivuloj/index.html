@@ -4,13 +4,13 @@
 			<li>
 				<a href="/">
 					<i class="material-icons">home</i>
-					Hejmo
+					Página Inicial
 				</a>
 			</li>
 			<li>
 				<a href="/aktivuloj">
 					<i class="material-icons">people</i>
-					Aktivuloj
+					Membros
 				</a>
 			</li>
 		</ol>
@@ -25,13 +25,13 @@
 								<div class="form-group form-float m-t-15">
 									<div class="form-line">
 										<input id="aktivulo-search" class="form-control">
-										<label class="form-label" for="aktivulo-search">Nomo aŭ retpoŝtadreso</label>
+										<label class="form-label" for="aktivulo-search">Nome ou endereço de e-mail</label>
 									</div>
 								</div>	
 							</div>
 							<div class="col-sm-3">
 								<div class="form-group cr-aktivulo-group-search">
-									<select id="aktivulo-group-search" class="selectpicker" multiple data-live-search="true" title="- Elekti rolojn -" data-selected-text-format="count>1">
+									<select id="aktivulo-group-search" class="selectpicker" multiple data-live-search="true" title="- Escolher cargos -" data-selected-text-format="count>1">
 										{{#page.groups}}
 											<option value="{{id}}">{{name}}</option>
 										{{/page.groups}}
@@ -41,7 +41,7 @@
 							<div class="col-sm-2">
 								<button type="submit" class="btn btn-primary waves-effect m-t-15">
 									<i class="material-icons">search</i>
-									<span>Serĉi</span>
+									<span>Buscar</span>
 								</button>
 							</div>
 						</div>
@@ -52,12 +52,12 @@
 			<div class="card" id="private-info-alert" style="display: none;">
 				<div class="body">
 					<p>
-						Tiu ĉi paĝo enhavas privatajn informojn, kiuj nur videblas de aktivuloj en Centra Reto. Bonvolu respekti ĉies privatecon kaj ne diskonigi la informojn sen permeso.
+						Esta página contém informações privadas que só devem ser vistas por membros do Centra Reto. Por favor, respeite a privacidade de todos e não compartilhe informações sem permissão.
 					</p>
 					<p>
-						Se nur aktivuloj en Centra Reto povas vidi vian ekranon, vi povas alklaki la ĉi-suban butonon por vidi la privatajn informojn.
+						Se sua tela for visível apenas para membros do Centra Reto da BEJO, você pode clicar no botão abaixo para ver as informações privadas.
 					</p>
-					<button class="btn btn-primary waves-effect m-t-15" id="private-info-button">MONTRI PRIVATAJN INFORMOJN</button>
+					<button class="btn btn-primary waves-effect m-t-15" id="private-info-button">MOSTRAR INFORMAÇÕES PRIVADAS</button>
 				</div>
 			</div>
 		</div>
@@ -114,7 +114,7 @@
 <div id="template-no-users" class="template col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<div class="card">
 		<div class="body">
-			<p>Centra Reto trovis neniujn rezultojn laŭ viaj serĉkriterioj.</p>
+			<p>Não encontramos nenhum resultado que corresponda aos seus critérios de busca.</p>
 		</div>
 	</div>
 </div>

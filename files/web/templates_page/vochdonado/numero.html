@@ -4,18 +4,18 @@
 			<li>
 				<a href="/">
 					<i class="material-icons">home</i>
-					Hejmo
+					Página Inicial
 				</a>
 			</li>
 			<li>
 				<a href="/vochdonado">
 					<i class="material-icons">how_to_vote</i>
-					Voĉdonado
+					Votações
 				</a>
 			</li>
 			<li>
 				<a href="/vochdonado/retaj">
-					Reta voĉdonado
+					Votações online
 				</a>
 			</li>
 			<li>
@@ -31,45 +31,45 @@
 				<div class="body">
 					<h1>« {{page.vote.name}} »</h1>
 					<p><pre>{{page.vote.description}}</pre></p>
-					<b>Metodo: </b>
+					<b>Método: </b>
 					{{#switch page.vote.type}}
-						{{#case 'jns'}}Jes/Ne/Sindeteno{{/case}}
+						{{#case 'jns'}}Sim/Não/Abstenção{{/case}}
 						{{#case 'pr'}}Paroranga Metodo{{/case}}
 						{{#case 'utv'}}Unuopa Transdonebla Voĉo{{/case}}
 					{{/switch}}
 					{{#switch page.vote.type}}
-						{{#case 'utv'}}<br><b>Elektotaj kandidatoj: </b>{{page.vote.numWinners}}{{/case}}
+						{{#case 'utv'}}<br><b>Candidatos: </b>{{page.vote.numWinners}}{{/case}}
 					{{/switch}}
 
 					<form id="vote-form" autocomplete="off">
-						<h2>Via {{#if page.isTieBreaker}}egalecrompa{{/if}} voĉo:</h2>
+						<h2>Seu voto {{#if page.isTieBreaker}}de rompedor de empates{{/if}}:</h2>
 						<p>
 							{{#switch page.vote.type}}
 								{{#case 'pr'}}
-								Listigu la eblojn laŭ via preferata ordo donante al viaj plej preferataj pli malaltan numeron.
-								{{#unless page.isTieBreaker}}Eblas doni al egale preferataj ebloj la saman numeron.{{/unless}}
+								Liste as opções de acordo com sua ordem de preferência (opções preferidas devem receber números mais baixos).
+								{{#unless page.isTieBreaker}}É possível dar o mesmo número para opções com preferência igual.{{/unless}}
 								{{/case}}
 								{{#case 'utv'}}
-								Listigu la eblojn laŭ via preferata ordo donante al viaj plej preferataj pli malaltan numeron. Ĉiu eblo devas ricevi unikan numeron.
+								Liste as opções de acordo com sua ordem de preferência (opções preferidas devem receber números mais baixos). Cada opção deve receber um número único.
 								{{/case}}
 							{{/switch}}
 							{{#if page.isTieBreaker}}
-							Ĉar vi estas egalecrompanto, vi devas listigi ĉiujn opciojn.
+							Já que você é o rompedor de empates, você deve listar todas as opções.
 							{{else}}
-							Opcioj kiuj ne ricevas numeron estas konsiderataj malpreferataj al la listigitaj. Balotilo sen ajna listigita kandidato estas konsiderata blanka.
+							Opções que não receberem número são considerados como menos preferidas em relação às listadas. Votos sem nenhuma opção listada são considerados como "brancos".
 							{{/if}}
 						</p>
 						{{#switch page.vote.type}}
 							{{#case 'jns'}}
 								<div>
 									<input name="vote" type="radio" class="with-gap" id="vote-j" value="j" required>
-									<label for="vote-j">JES</label>
+									<label for="vote-j">SIM</label>
 
 									<input name="vote" type="radio" class="with-gap" id="vote-n" value="n" required>
-									<label for="vote-n">NE</label>
+									<label for="vote-n">NÃO</label>
 
 									<input name="vote" type="radio" class="with-gap" id="vote-s" value="s" required>
-									<label for="vote-s">SINDETENE</label>
+									<label for="vote-s">ME ABSTENHO</label>
 								</div>
 							{{/case}}
 							{{#case 'pr' 'utv'}}
@@ -86,7 +86,7 @@
 
 						<button type="submit" class="btn btn-success m-t-15 waves-effect" id="vote-button">
 							<i class="material-icons">how_to_vote</i>
-							<span>Voĉdoni</span>
+							<span>Votar</span>
 						</button>
 					</form>
 				</div>

@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Ŝarĝas ...</p>
+                <p>Carregando ...</p>
             </div>
         </div>
         <!-- #END# Page Loader -->
@@ -68,7 +68,7 @@
                     <a class="navbar-brand">
                         <span>
                             <img id="navbar-logo" src="/images/bejo.png?{{&version}}">
-                            Centra Reto de BEJO
+                            Centra Reto da BEJO
                         </span>
                     </a>
                 </div>
@@ -84,7 +84,7 @@
                     <div class="image">
                         <a href="/aktivuloj/{{email}}">
                             {{#if hasPicture}}
-                            <img src="{{pictures.[128]}}" width="48" height="48" alt="Bildo de {{longName}}" class="cr-user-picture">
+                            <img src="{{pictures.[128]}}" width="48" height="48" alt="Foto de {{longName}}" class="cr-user-picture">
                             {{else}}
                             <svg width="48" height="48" data-jdenticon-value="{{longName}}" class="cr-user-picture"></svg>
                             {{/if}}
@@ -97,9 +97,9 @@
                             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                             <ul class="dropdown-menu pull-right">
                                 <li><a href="/aktivuloj/{{email}}"><i class="material-icons">person</i>Profilo</a></li>
-                                <li><a href="/agordoj"><i class="material-icons">settings</i>Agordoj</a></li>
+                                <li><a href="/agordoj"><i class="material-icons">settings</i>Configurações</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/" id="cr-logout"><i class="material-icons">input</i>Elsaluti</a></li>
+                                <li><a href="/" id="cr-logout"><i class="material-icons">input</i>Sair</a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                 {{/user}}
                 {{^user}}
                 <div class="menu-login">
-                    <p><b>Vi ne estas ensalutinta</b><div class="btn bg-green waves-effect" id="cr-login">ENSALUTI</div></p>
+                    <p><b>Você ainda não entrou no Centra Reto</b><div class="btn bg-green waves-effect" id="cr-login">ENTRAR</div></p>
                 </div>
                 {{/user}}
                 <!-- Menu -->
@@ -139,12 +139,12 @@
                     <div class="copyright">
                         &copy; {{year}} <a href="http://bejo.esperanto.org.br">BEJO</a>, <a href="https://ribeiro.cc">Ana Ribeiro</a>;
                        <p>
-                            baziite je <a href="https://tejo.org">TEJO</a>, <a href="https://miestasmia.com">Mia Nordentoft</a>
-                       </p> 
+                            baseado em <a href="https://tejo.org">TEJO</a>, <a href="https://miestasmia.com">Mia Nordentoft</a>
+                       </p>
                     </div>
                     <div class="version">
-                        Versio {{version}}, <b><a href="https://github.com/tejoesperanto/centra-reto">Github</a>, <a href="https://raw.githubusercontent.com/tejoesperanto/centra-reto/master/LICENSE">MIT-permesilo</a></b><br>
-                        <b><a href="/kondichoj">Privatecpolitiko</a></b>
+                        Versão {{version}}, <b><a href="https://github.com/tejoesperanto/centra-reto">Github</a>, <a href="https://raw.githubusercontent.com/tejoesperanto/centra-reto/master/LICENSE">MIT-permesilo</a></b><br>
+                        <b><a href="/kondichoj">Política de privacidade</a></b>
                     </div>
                 </div>
                 <!-- #Footer -->

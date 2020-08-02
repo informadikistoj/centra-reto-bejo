@@ -1,11 +1,11 @@
-Ŝanĝo de via retpoŝtadreso
+Mudança no seu endereço de e-mail
 ==========================
 
-Kara {{&name}}
+Saluton, {{&name}}.
 
-Ni skribis al vi por informi vin, ke la retpoŝtadreso de via konto en Centra Reto estis ŝanĝita al {{&new_email}}.
+Informamos que o endereço de e-mail da sua conta no Centra Reto da BEJO foi modificado. O novo endereço é {{&new_email}}.
 
-Se vi ne mem faris tiun ŝanĝon, bonvolu tuj kontakti nin.
+Se não foi você quem fez esta alteração, por favor, entre em contato conosco imediatamente.
 
-Salutas
-Centra Reto-roboto
+Amike
+Robô do Centra Reto
